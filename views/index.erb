@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+  <body>
+    <h1>Log yourself!</h1>
+      <form action="/" method="POST">
+        <div>
+          <label for="user">User: </label>
+          <input type="text" name="user">
+        </div>
+        <div>
+          <label for="pwd">Password: </label>
+          <input type="password" name="pwd">
+        </div>
+        <button type="submit" name="operation" value="login">Log in!</button>
+        <button type="submit">Log out</button>
+      </form>
+      
+      <p> <%= @show_result %> </p>
+    <!--   <form action="/hour" method="POST">
+        <button type="submit" name="" value="">Time in New York</button>
+        <button type="submit" name="" value="">Time in Tokyo</button>
+      </form> -->
+  </body>
+</html>
